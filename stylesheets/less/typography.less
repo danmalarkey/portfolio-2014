@@ -8,13 +8,9 @@ All things Typography related.
 // Typefaces
 // ----------------------------
 
-@merriweather:			'Merriweather', 'oswald', 'HelveticaNeue', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+@font-compressed: 		"franklin-gothic-urw-comp", 'HelveticaNeue', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 
-@oswald:				'oswald', 'Merriweather', 'HelveticaNeue', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-
-@armata:				'Armata', 'Merriweather', 'oswald', 'HelveticaNeue', 'Helvetica Neue', Helvetica, Arial, sans-serif; 
-
-@glegoo:				'Glegoo', 'Merriweather', 'oswald', 'Armata', 'HelveticaNeue', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+@font-regular: 			"franklin-gothic-urw", 'HelveticaNeue', 'Helvetica Neue', Helvetica, Arial, sans-serif;;
 
 
 
@@ -22,23 +18,21 @@ All things Typography related.
 // ----------------------------
 
 h1, h2, h3, h4, h5, h6 { 
-	color: darken(@asbestos,10%);  
-	font-family: @glegoo; 
+	color: darken(@asbestos,10%);   
 	margin-bottom: 0.500rem; 
-	text-rendering: optimizelegibility; }
+	text-rendering: optimizelegibility; 
+	font-family: @font-compressed; }
 	
 	
 h1 a, h2 a, h3 a, h4 a, h5 a, h6 a { 
 	font-weight: inherit; 
 	font-family: inherit; }
 	
-h1.title, h3.title{ 
-	font-family: @oswald; 
+h1.title, h3.title{  
 	color: @orange; 
 	.border-bottom;  }
 
-h1.heading, h3.heading { 
-	font-family: @oswald; 
+h1.heading, h3.heading {  
 	color: @concrete; 
 	.border-bottom;  }
 	
@@ -93,8 +87,7 @@ blockquote cite {
 		
 p { 
 	margin: 0 0 1em; 
-	color: @asbestos; 
-	font-family: @armata; 
+	color: @asbestos;  
 	.font-size(14); /* 14px */
 	line-height: 2.2; }
 

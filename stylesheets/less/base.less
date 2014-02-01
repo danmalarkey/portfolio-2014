@@ -71,6 +71,89 @@ html {
 	-webkit-text-size-adjust: 100%;
       -ms-text-size-adjust: 100%; }
       
+      
+/**************
+*
+*	Social Nav
+*
+**************/
+
+.social-nav {
+	.text-center;
+	
+	ul {
+		position: fixed;
+		padding: 0;
+		margin-left: 0;
+		bottom: 30%;
+		list-style: none;
+		text-align: center;
+		
+		li {
+			display: block;
+			text-align: center;
+
+			a {
+				padding: 2em;
+				color: darkgrey;
+				background: @white;
+				background-color: @white;
+				display: block;
+				padding: 1em;
+				text-align: center;
+				width: 100%;
+				text-decoration: none;
+				.transition(all .25s ease);
+				
+				&:hover {
+					background: @orange;
+					background-color: @orange;
+					color: @white;
+				}
+			}
+			
+			i.fa.fa {
+				.font-size(24);
+				
+			}
+		}
+	}
+}
+      
+
+/**************
+*
+*	Intro
+*
+**************/
+
+.intro {
+	background: url(../img/orn-bkgrd.jpg) center center no-repeat;
+	background-size: cover;
+	height: 43em;
+	width: 100%;
+	.text-center;
+	
+	img {
+		.border-radius(1000px);
+		width: 150px;
+		height: 150px;
+		border: 3px solid @white;
+		.box-shadow(0 3px 7px rgba(0,0,0,.4));
+		margin-top: 18em;
+		position: relative;
+	}
+	
+	h1 {
+		color: @white;
+	}
+}
+
+
+
+
+
+
  
 @import "mixins.less"; 
 @import "variables.less";     
@@ -80,6 +163,7 @@ html {
 @import "forms.less";
 @import "dropdowns.less"; 
 @import "colors.less";
+@import "fontawesome.less";
       
 
 

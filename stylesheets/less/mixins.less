@@ -1,0 +1,163 @@
+// floats + justified
+// ----------------------------	
+
+.left-float			{ float: left; }	
+.right-float		{ float: right; }	
+.center-float		{ margin: 0 auto; }
+
+.text-left			{ text-align: left; }
+.text-right			{ text-align: right; }
+.text-center		{ text-align: center; }
+.justified 			{ text-align: justify; }
+
+.neg-1px            { letter-spacing: -1px; }	
+
+@base-font-size: 	16px;
+
+.font-size (@size) {
+  font-size: 0px + @size;
+  font-size: 0rem + @size / @base-font-size;
+}
+
+
+
+.font-size (@size) {
+  font-size: 0px + @size;
+  font-size: 0rem + @size / @base-font-size;
+}
+
+
+
+
+//       				Horizontal Rules          	              //
+//===============================================================//
+
+.hr_thin		{ border: 1px solid @clouds; }
+.hr_medium		{ border: 3px solid @clouds; }
+.hr_thick		{ border: 5px solid @clouds; }
+
+.hr_thin_w		{ border: 1px solid @white; }
+.hr_medium_w	{ border: 3px solid @white; }
+.hr_thick_w	    { border: 5px solid @white; }
+
+
+//       				Round Corners            	              //
+//===============================================================//
+			
+.round-corner (@radius: 6px) {
+  -webkit-border-radius: @radius;
+  -moz-border-radius: @radius;
+  -ms-border-radius: @radius;
+  -o-border-radius: @radius;
+  border-radius: @radius; }
+  
+.round-corner-top-radius(@radius) {
+	round-corner-top-right-radius: @radius;
+	round-corner-top-left-radius: @radius;
+}
+
+.round-corner-right-radius(@radius) {
+	round-corner-bottom-right-radius: @radius;
+	round-corner-bottom-right-radius: @radius;
+}
+
+.round-corner-bottom-radius(@radius) {
+	round-corner-bottom-right-radius: @radius;
+	round-corner-bottom-left-radius: @radius;
+}
+
+.round-corner-left-radius(@radius) {
+	round-corner-bottom-left-radius: @radius;
+	round-corner-bottom-left-radius: @radius;
+}
+
+
+.opacity(@opacity) {
+  opacity: @opacity;
+}
+
+
+.transition(@transition) {
+	-webkit-transition: @transition;
+	-moz-transition: @transition;
+	transition: @transition;
+}
+
+.rotate(@deg) {
+	-webkit-transform:rotate(@deg);    
+	-moz-transform:rotate(@deg);   
+	-ms-transform:rotate(@deg);   
+	 -o-transform:rotate(@deg);
+	    transform:rotate(@deg);
+}
+
+.transform(@skew) {
+	-webkit-transform:skew(@skew);
+	-moz-transform:skew(@skew);
+	-ms-transform:skew(@skew);
+	-o-transform:skew(@skew);
+	transform:skew(@skew);
+}
+
+.gradient(@color: #F5F5F5, @start: #EEE, @stop: #FFF) {
+	  background: @color;
+	  background: -webkit-gradient(linear,
+	                               left bottom,
+	                               left top,
+	                               color-stop(0, @start),
+	                               color-stop(1, @stop));
+	  background: -ms-linear-gradient(bottom,
+	                                  @start,
+	                                  @stop);
+	  background: -moz-linear-gradient(center bottom,
+	                                   @start 0%,
+	                                   @stop 100%);
+	  background: -o-linear-gradient(@stop,
+	                                 @start);
+	  background-image: linear-gradient(top, @start, @stop);
+	  
+	  filter: e(%("progid:DXImageTransform.Microsoft.gradient(startColorstr='%d', endColorstr='%d', GradientType=0)",@stop,@start));
+}
+
+//       				Buttons 	            	              //
+//===============================================================//
+
+.button-version (@color; @background; @border) {
+	color: @color;
+	background-color: @background;
+	border-color: @border;
+	.box-shadow(inset 0px 1px 0 rgba(255,255,255,.5));
+	
+	&:hover {
+		background-color: darken(@background, 10%);
+        border-color: darken(@border, 10%);
+	}
+	&:active,
+	&.active {
+		color: @color;
+		background-color: darken(@background, 12.5%);
+        border-color: darken(@border, 12.5%);
+        .box-shadow(inset 0px 3px 6px rgba(0,0,0,.25));
+        outline: 0;
+	}
+}
+
+
+.border-bottom   { border-bottom: 1px solid @clouds; padding-bottom: .5em; margin-bottom: 1em; }
+
+
+
+.box-shadow(@values) {
+  -webkit-box-shadow: @values;
+  -moz-box-shadow: @values;
+  box-shadow: @values;
+}
+
+.inner-shadow(@horizontal @vertical @blur @alpha) {
+  -webkit-box-shadow: inset @horizontal @vertical @blur rgba(0, 0, 0, @alpha);
+  -moz-box-shadow: inset @horizontal @vertical @blur rgba(0, 0, 0, @alpha);
+  box-shadow: inset @horizontal @vertical @blur rgba(0, 0, 0, @alpha);
+}
+
+
+

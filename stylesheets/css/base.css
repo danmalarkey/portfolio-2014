@@ -1605,8 +1605,8 @@ header .hero-overlay {
   z-index: 1;
 }
 header a .brand {
-  width: 65px;
-  width: 4.0625rem;
+  width: 55px;
+  width: 3.4375rem;
   z-index: 3;
   position: relative;
   text-decoration: none;
@@ -1665,4 +1665,17 @@ a.logo:before {
   padding-top: 10rem;
   padding-bottom: 160px;
   padding-bottom: 10rem;
+}
+.process {
+  text-align: center;
+  padding-top: 160px;
+  padding-top: 10rem;
+  padding-bottom: 160px;
+  padding-bottom: 10rem;
+}
+.process h1 {
+  font-size: 72px;
+  font-size: 4.5rem;
+  margin-top: 0;
+  padding-top: 0;
 }

@@ -979,6 +979,7 @@ h4,
 h5,
 h6 {
   color: #555555;
+  font-family: "franklin-gothic-urw-comp", sans-serif;
   margin-bottom: 0.500rem;
   text-rendering: optimizelegibility;
 }
@@ -1673,9 +1674,46 @@ a.logo:before {
   padding-bottom: 160px;
   padding-bottom: 10rem;
 }
+.process .row-fluid {
+  margin-top: 6em;
+}
+.process .col4 .fa::before {
+  color: #ffffff;
+  background-color: #f46801;
+  padding: 16px;
+  padding: 1rem;
+  -webkit-border-radius: 40em;
+  -moz-border-radius: 40em;
+  -ms-border-radius: 40em;
+  -o-border-radius: 40em;
+  border-radius: 40em;
+  float: left;
+  clear: both;
+  font-size: 32px;
+  font-size: 2rem;
+}
+.process .fa.fa {
+  -webkit-border-radius: 40;
+  -moz-border-radius: 40;
+  -ms-border-radius: 40;
+  -o-border-radius: 40;
+  border-radius: 40;
+  float: left;
+  margin-right: 16px;
+  margin-right: 1rem;
+}
+.process .col4 h2 {
+  text-align: left;
+  margin-top: -7px;
+  padding-right: 16px;
+  padding-right: 1rem;
+}
+.process p {
+  text-align: left;
+  margin-top: 32px;
+  margin-top: 2rem;
+}
 .process h1 {
-  font-size: 72px;
-  font-size: 4.5rem;
   margin-top: 0;
   padding-top: 0;
 }

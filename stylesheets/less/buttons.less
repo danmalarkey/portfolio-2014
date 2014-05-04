@@ -37,12 +37,9 @@ Here you'll find small, medium, large, and full size buttons.
   color: @white;
   padding: 1em;
   display: inline-block;
-  .left-float;
-  font-family: 'armata';
-  letter-spacing: 1px;
+  font-family: @primary-type;
   .border-radius(4px);
   .rem-px(font-size, 16);
-  font-family: ;
   font-weight: @btn-font-weight;
   outline: 0;
   cursor: pointer;
@@ -71,4 +68,8 @@ Here you'll find small, medium, large, and full size buttons.
 
 .btn-success {
 	.button-version(@btn-success-color, @btn-success-bg, @btn-success-border);
+}
+
+.btn-orange {
+  .button-version(@btn-orange-color, @btn-orange-bg, @btn-orange-border);
 }

@@ -20,6 +20,28 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+	"\/stylesheets\/img\/f23_mobile.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 143559,
+		"inputAbbreviatedPath": "\/stylesheets\/img\/f23_mobile.png",
+		"outputAbbreviatedPath": "\/stylesheets\/img\/f23_mobile.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/stylesheets\/img\/factory.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 557570,
+		"inputAbbreviatedPath": "\/stylesheets\/img\/factory.png",
+		"outputAbbreviatedPath": "\/stylesheets\/img\/factory.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/stylesheets\/img\/hero_block.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
@@ -38,6 +60,17 @@
 		"initialSize": 511707,
 		"inputAbbreviatedPath": "\/stylesheets\/img\/home_screen.png",
 		"outputAbbreviatedPath": "\/stylesheets\/img\/home_screen.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/stylesheets\/img\/modal.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 120960,
+		"inputAbbreviatedPath": "\/stylesheets\/img\/modal.png",
+		"outputAbbreviatedPath": "\/stylesheets\/img\/modal.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -136,6 +169,26 @@
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/stylesheets\/less\/dropdowns.less",
 		"outputAbbreviatedPath": "\/stylesheets\/css\/dropdowns.css",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"relativeURLS": 0,
+		"shouldRunAutoprefixer": 0,
+		"shouldRunBless": 0,
+		"strictImports": 0,
+		"strictMath": 0,
+		"strictUnits": 0
+		},
+	"\/stylesheets\/less\/footer.less": {
+		"allowInsecureImports": 0,
+		"createSourceMap": 0,
+		"disableJavascript": 0,
+		"fileType": 1,
+		"ieCompatibility": 1,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/stylesheets\/less\/footer.less",
+		"outputAbbreviatedPath": "\/stylesheets\/css\/footer.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,

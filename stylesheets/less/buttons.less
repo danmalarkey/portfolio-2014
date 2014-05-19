@@ -34,7 +34,7 @@ Here you'll find small, medium, large, and full size buttons.
 
 .btn {
   border: 1px solid transparent;
-  color: @white;
+  color: darken(@base-color-ccc, 5%);
   padding: 1em;
   display: inline-block;
   font-family: @primary-type;
@@ -43,11 +43,17 @@ Here you'll find small, medium, large, and full size buttons.
   font-weight: @btn-font-weight;
   outline: 0;
   cursor: pointer;
-  .transition(background-color 250ms ease-out); 
+  .transition(all 250ms ease-in); 
+  
+  &:hover {
+    border-color: darken(@base-color-aaa, 5%);
+    .transition(all 250ms ease-out);
+  }
 }
   		
 .btn-default {
 	.button-version(@btn-default-color, @btn-default-bg, @btn-default-border);
+	.gradient(@white, @off-white, @white);
 }
 
 .btn-primary {

@@ -175,6 +175,9 @@ header a:hover::after {
   font-size: 0rem + @size / @base-font-size;
 }
 */
+.active {
+  font-weight: 900;
+}
 /* 24px */
 /* 20px */
 /* 14px */
@@ -1087,7 +1090,7 @@ p {
   font-size: 16px;
   font-size: 1rem;
   /* 14px */
-  line-height: 1.6;
+  line-height: 1.8;
 }
 p.lead {
   font-size: 21px;
@@ -1134,7 +1137,7 @@ Here you'll find small, medium, large, and full size buttons.
 }
 .btn {
   border: 1px solid transparent;
-  color: #ffffff;
+  color: #bfbfbf;
   padding: 1em;
   display: inline-block;
   font-family: "franklin-gothic-urw", sans-serif;
@@ -1148,17 +1151,30 @@ Here you'll find small, medium, large, and full size buttons.
   font-weight: normal;
   outline: 0;
   cursor: pointer;
-  -webkit-transition: background-color 250ms ease-out;
-  -moz-transition: background-color 250ms ease-out;
-  transition: background-color 250ms ease-out;
+  -webkit-transition: all 250ms ease-in;
+  -moz-transition: all 250ms ease-in;
+  transition: all 250ms ease-in;
+}
+.btn:hover {
+  border-color: #9d9d9d;
+  -webkit-transition: all 250ms ease-out;
+  -moz-transition: all 250ms ease-out;
+  transition: all 250ms ease-out;
 }
 .btn-default {
-  color: #8c8c8c;
+  color: #595959;
   background-color: #f2f2f2;
   border-color: #e6e6e6;
   -webkit-box-shadow: inset 0px 1px 0 rgba(255, 255, 255, 0.5);
   -moz-box-shadow: inset 0px 1px 0 rgba(255, 255, 255, 0.5);
   box-shadow: inset 0px 1px 0 rgba(255, 255, 255, 0.5);
+  background: #ffffff;
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(0, #f8f8f8), color-stop(1, #ffffff));
+  background: -ms-linear-gradient(bottom, #f8f8f8, #ffffff);
+  background: -moz-linear-gradient(center bottom, #f8f8f8 0%, #ffffff 100%);
+  background: -o-linear-gradient(#ffffff, #f8f8f8);
+  background-image: linear-gradient(top, #f8f8f8, #ffffff);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#f8f8f8', GradientType=0);
 }
 .btn-default:hover {
   background-color: #e5e5e5;
@@ -1166,12 +1182,12 @@ Here you'll find small, medium, large, and full size buttons.
 }
 .btn-default:active,
 .btn-default.active {
-  color: #8c8c8c;
+  color: #595959;
   background-color: #dddddd;
   border-color: #d0d0d0;
-  -webkit-box-shadow: inset 0px 3px 6px rgba(0, 0, 0, 0.25);
-  -moz-box-shadow: inset 0px 3px 6px rgba(0, 0, 0, 0.25);
-  box-shadow: inset 0px 3px 6px rgba(0, 0, 0, 0.25);
+  -webkit-box-shadow: inset 0px 1px 3px rgba(0, 0, 0, 0.25);
+  -moz-box-shadow: inset 0px 1px 3px rgba(0, 0, 0, 0.25);
+  box-shadow: inset 0px 1px 3px rgba(0, 0, 0, 0.25);
   outline: 0;
 }
 .btn-primary {
@@ -1191,9 +1207,9 @@ Here you'll find small, medium, large, and full size buttons.
   color: #ffffff;
   background-color: #2282c1;
   border-color: #1b6596;
-  -webkit-box-shadow: inset 0px 3px 6px rgba(0, 0, 0, 0.25);
-  -moz-box-shadow: inset 0px 3px 6px rgba(0, 0, 0, 0.25);
-  box-shadow: inset 0px 3px 6px rgba(0, 0, 0, 0.25);
+  -webkit-box-shadow: inset 0px 1px 3px rgba(0, 0, 0, 0.25);
+  -moz-box-shadow: inset 0px 1px 3px rgba(0, 0, 0, 0.25);
+  box-shadow: inset 0px 1px 3px rgba(0, 0, 0, 0.25);
   outline: 0;
 }
 .btn-danger {
@@ -1213,9 +1229,9 @@ Here you'll find small, medium, large, and full size buttons.
   color: #ffffff;
   background-color: #dd2d1b;
   border-color: #c62918;
-  -webkit-box-shadow: inset 0px 3px 6px rgba(0, 0, 0, 0.25);
-  -moz-box-shadow: inset 0px 3px 6px rgba(0, 0, 0, 0.25);
-  box-shadow: inset 0px 3px 6px rgba(0, 0, 0, 0.25);
+  -webkit-box-shadow: inset 0px 1px 3px rgba(0, 0, 0, 0.25);
+  -moz-box-shadow: inset 0px 1px 3px rgba(0, 0, 0, 0.25);
+  box-shadow: inset 0px 1px 3px rgba(0, 0, 0, 0.25);
   outline: 0;
 }
 .btn-info {
@@ -1235,9 +1251,9 @@ Here you'll find small, medium, large, and full size buttons.
   color: #ffffff;
   background-color: #15967c;
   border-color: #12806a;
-  -webkit-box-shadow: inset 0px 3px 6px rgba(0, 0, 0, 0.25);
-  -moz-box-shadow: inset 0px 3px 6px rgba(0, 0, 0, 0.25);
-  box-shadow: inset 0px 3px 6px rgba(0, 0, 0, 0.25);
+  -webkit-box-shadow: inset 0px 1px 3px rgba(0, 0, 0, 0.25);
+  -moz-box-shadow: inset 0px 1px 3px rgba(0, 0, 0, 0.25);
+  box-shadow: inset 0px 1px 3px rgba(0, 0, 0, 0.25);
   outline: 0;
 }
 .btn-warning {
@@ -1257,9 +1273,9 @@ Here you'll find small, medium, large, and full size buttons.
   color: #ffffff;
   background-color: #cf830a;
   border-color: #b77409;
-  -webkit-box-shadow: inset 0px 3px 6px rgba(0, 0, 0, 0.25);
-  -moz-box-shadow: inset 0px 3px 6px rgba(0, 0, 0, 0.25);
-  box-shadow: inset 0px 3px 6px rgba(0, 0, 0, 0.25);
+  -webkit-box-shadow: inset 0px 1px 3px rgba(0, 0, 0, 0.25);
+  -moz-box-shadow: inset 0px 1px 3px rgba(0, 0, 0, 0.25);
+  box-shadow: inset 0px 1px 3px rgba(0, 0, 0, 0.25);
   outline: 0;
 }
 .btn-success {
@@ -1279,9 +1295,9 @@ Here you'll find small, medium, large, and full size buttons.
   color: #ffffff;
   background-color: #26a95d;
   border-color: #219452;
-  -webkit-box-shadow: inset 0px 3px 6px rgba(0, 0, 0, 0.25);
-  -moz-box-shadow: inset 0px 3px 6px rgba(0, 0, 0, 0.25);
-  box-shadow: inset 0px 3px 6px rgba(0, 0, 0, 0.25);
+  -webkit-box-shadow: inset 0px 1px 3px rgba(0, 0, 0, 0.25);
+  -moz-box-shadow: inset 0px 1px 3px rgba(0, 0, 0, 0.25);
+  box-shadow: inset 0px 1px 3px rgba(0, 0, 0, 0.25);
   outline: 0;
 }
 .btn-orange {
@@ -1301,9 +1317,9 @@ Here you'll find small, medium, large, and full size buttons.
   color: #ffffff;
   background-color: #c95601;
   border-color: #af4b01;
-  -webkit-box-shadow: inset 0px 3px 6px rgba(0, 0, 0, 0.25);
-  -moz-box-shadow: inset 0px 3px 6px rgba(0, 0, 0, 0.25);
-  box-shadow: inset 0px 3px 6px rgba(0, 0, 0, 0.25);
+  -webkit-box-shadow: inset 0px 1px 3px rgba(0, 0, 0, 0.25);
+  -moz-box-shadow: inset 0px 1px 3px rgba(0, 0, 0, 0.25);
+  box-shadow: inset 0px 1px 3px rgba(0, 0, 0, 0.25);
   outline: 0;
 }
 /* =============================================================
@@ -1602,7 +1618,7 @@ EasyDropdown Default Theme.
 .dropdown li.active {
   font-weight: 700;
 }
-header nav li a::after {
+header nav a::after {
   content: "";
   position: absolute;
   width: 0;
@@ -1612,7 +1628,7 @@ header nav li a::after {
   right: 0%;
   transition: .2s;
 }
-header nav li a::before {
+header nav a::before {
   content: "";
   position: absolute;
   width: 0;
@@ -1660,7 +1676,7 @@ header nav {
   position: relative;
   z-index: 3;
 }
-header nav li a {
+header nav a {
   float: right;
   display: inline-table;
   color: #ffffff;
@@ -1763,10 +1779,10 @@ a.logo:before {
   padding-top: 0;
 }
 .sneak-peek {
-  background-color: #f5f5f5;
+  background-color: #f8f8f8;
   padding: 6em 0;
-  border-top: 1px solid #dcdcdc;
-  border-bottom: 1px solid #dcdcdc;
+  border-top: 1px solid #dfdfdf;
+  border-bottom: 1px solid #dfdfdf;
   -webkit-box-shadow: inset 0 1px 2px #ffffff;
   -moz-box-shadow: inset 0 1px 2px #ffffff;
   box-shadow: inset 0 1px 2px #ffffff;
@@ -1782,7 +1798,20 @@ a.logo:before {
 }
 .sneak-peek h2 {
   margin-top: 0;
-  text-transform: uppercase;
+}
+.sneak-peek a.btn.btn-default {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 3em;
+  text-align: center;
+  margin-bottom: 0;
+  font-weight: 500;
+  text-transform: capitalize;
+  border-color: #d9d9d9;
+  width: 35%;
+}
+.sneak-peek a.btn.btn-default:hover {
+  border-color: #cccccc;
 }
 .sneak-peek .overlay {
   background-color: #f46801;
@@ -1791,16 +1820,16 @@ a.logo:before {
   width: 100%;
   top: 0;
   opacity: 0;
-  -webkit-transition: all 0.35s ease;
-  -moz-transition: all 0.35s ease;
-  transition: all 0.35s ease;
+  -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  transition: all 0.2s ease;
 }
 .sneak-peek .overlay:hover {
   opacity: 0.95;
   background-color: #f46801;
-  -webkit-transition: all 0.35s ease-out;
-  -moz-transition: all 0.35s ease-out;
-  transition: all 0.35s ease-out;
+  -webkit-transition: all 0.2s ease-out;
+  -moz-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
 }
 .sneak-peek .overlay .fa.fa-dribbble:before {
   font-size: 1.5em;
@@ -1811,9 +1840,9 @@ a.logo:before {
   -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.15);
   -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.15);
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.15);
-  -webkit-transition: all 0.35s ease;
-  -moz-transition: all 0.35s ease;
-  transition: all 0.35s ease;
+  -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  transition: all 0.2s ease;
 }
 .sneak-peek .overlay:hover p {
   color: #ffffff;
@@ -1824,21 +1853,21 @@ a.logo:before {
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
-  -webkit-transition: all 0.35s ease-in;
-  -moz-transition: all 0.35s ease-in;
-  transition: all 0.35s ease-in;
+  -webkit-transition: all 0.2s ease-in;
+  -moz-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
 }
 .sneak-peek .overlay:hover p:hover {
-  -webkit-transition: all 0.35s ease-out;
-  -moz-transition: all 0.35s ease-out;
-  transition: all 0.35s ease-out;
+  -webkit-transition: all 0.2s ease-out;
+  -moz-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
 }
 footer {
   padding: 6em 0;
 }
 footer .fa.fa-heart {
   color: #f46801;
-  opacity: 0.5;
+  opacity: 0.75;
 }
 footer p.text-center .btn.btn-orange {
   margin-left: auto;
@@ -1881,7 +1910,27 @@ p.details {
   margin-top: 3em;
 }
 p.copyright {
+  color: #aaaaaa;
+}
+.divider {
   color: #cccccc;
+  margin: 0 1em;
+}
+footer nav.text-center {
+  margin: 2em 0;
+}
+footer nav.text-center a {
+  color: #cccccc;
+  -webkit-transition: all 0.25s ease-in;
+  -moz-transition: all 0.25s ease-in;
+  transition: all 0.25s ease-in;
+  font-weight: normal;
+}
+footer nav.text-center a:hover {
+  color: #f46801;
+  -webkit-transition: all 0.25s ease-out;
+  -moz-transition: all 0.25s ease-out;
+  transition: all 0.25s ease-out;
 }
 a.fa.fa-twitter.twitter:hover {
   color: #55acee;
@@ -1900,4 +1949,270 @@ a.fa.fa-dribbble.dribbble:hover {
 }
 a.fa.fa-linkedin.linkedin:hover {
   color: #0e76a8;
+}
+header nav a::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  background: #ffffff;
+  bottom: -2px;
+  right: 0%;
+  transition: .2s;
+}
+header nav a::before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  background: #ffffff;
+  top: -2px;
+  right: 50%;
+  transition: .2s;
+}
+header.experience-hero {
+  background: url("http://unsplash.s3.amazonaws.com/batch%207/Top_view.jpg") no-repeat 0% 90%;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  padding-top: 30px;
+  padding-top: 1.875rem;
+  position: relative;
+  height: 400px;
+}
+header.experience-hero .hero-overlay {
+  background: #f46801;
+  opacity: 0.92;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  overflow: hidden;
+  z-index: 1;
+}
+header.experience-hero a .brand {
+  width: 55px;
+  width: 3.4375rem;
+  z-index: 3;
+  position: relative;
+  text-decoration: none;
+  border: none;
+}
+header.experience-hero nav {
+  float: right;
+  list-style: none;
+  width: 50%;
+  position: relative;
+  z-index: 3;
+}
+header.experience-hero nav a {
+  float: right;
+  display: inline-table;
+  color: #ffffff;
+  margin-left: 48px;
+  margin-left: 3rem;
+  text-decoration: none;
+  vertical-align: middle;
+}
+header.experience-hero h1 {
+  font-family: "franklin-gothic-urw-comp", sans-serif;
+  font-size: 48px;
+  font-size: 3rem;
+  color: #eeeeee;
+  position: relative;
+  z-index: 3;
+  text-transform: uppercase;
+  padding-top: 90px;
+  padding-top: 5.625rem;
+}
+header.experience-hero p {
+  color: #ffffff;
+  z-index: 3;
+  position: relative;
+  font-size: 18px;
+  font-size: 1.125rem;
+  margin-top: 24px;
+  margin-top: 1.5rem;
+  padding-right: 6%;
+}
+header.experience-hero .hero-img-phone {
+  position: relative;
+  z-index: 3;
+  width: 375px;
+  width: 23.4375rem;
+  top: 50px;
+  top: 3.125rem;
+}
+a.logo:after,
+a.logo:before {
+  border: none;
+  height: 0px;
+}
+.experience-selfie img {
+  width: 250px;
+  height: 250px;
+  border-radius: 1000px;
+  position: relative;
+  z-index: 4;
+  margin-left: auto;
+  margin-right: auto;
+  border: 10px solid #ffffff;
+  top: 12em;
+  -webkit-box-shadow: 0 -9px 6px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0 -9px 6px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 -9px 6px rgba(0, 0, 0, 0.1);
+}
+.open-source-home {
+  padding-top: 160px;
+  padding-top: 10rem;
+  padding-bottom: 160px;
+  padding-bottom: 10rem;
+}
+.about-me {
+  text-align: center;
+  padding-top: 160px;
+  padding-top: 10rem;
+  padding-bottom: 160px;
+  padding-bottom: 10rem;
+}
+.about-me h1 {
+  margin-top: 0;
+}
+.about-me .row-fluid {
+  margin-top: 6em;
+}
+.about-me .container-wrapper {
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.about-me .container-wrapper p {
+  color: #999999;
+}
+.about-me .col4 .fa::before {
+  color: #ffffff;
+  background-color: #f46801;
+  padding: 16px;
+  padding: 1rem;
+  -webkit-border-radius: 40em;
+  -moz-border-radius: 40em;
+  -ms-border-radius: 40em;
+  -o-border-radius: 40em;
+  border-radius: 40em;
+  float: left;
+  clear: both;
+  font-size: 32px;
+  font-size: 2rem;
+}
+.about-me .fa.fa {
+  -webkit-border-radius: 40;
+  -moz-border-radius: 40;
+  -ms-border-radius: 40;
+  -o-border-radius: 40;
+  border-radius: 40;
+  float: left;
+  margin-right: 16px;
+  margin-right: 1rem;
+}
+.about-me .col4 h2 {
+  text-align: left;
+  margin-top: -7px;
+  padding-right: 16px;
+  padding-right: 1rem;
+}
+.about-me p {
+  text-align: left;
+  margin-top: 32px;
+  margin-top: 2rem;
+}
+.about-me h1 {
+  margin-top: 0;
+  padding-top: 0;
+}
+.sneak-peek {
+  background-color: #f8f8f8;
+  padding: 6em 0;
+  border-top: 1px solid #dfdfdf;
+  border-bottom: 1px solid #dfdfdf;
+  -webkit-box-shadow: inset 0 1px 2px #ffffff;
+  -moz-box-shadow: inset 0 1px 2px #ffffff;
+  box-shadow: inset 0 1px 2px #ffffff;
+}
+.sneak-peek .col4 {
+  position: relative;
+  overflow: hidden;
+  height: 288px;
+  height: 18rem;
+}
+.sneak-peek .row-fluid {
+  margin-top: 3em;
+}
+.sneak-peek h2 {
+  margin-top: 0;
+}
+.sneak-peek a.btn.btn-default {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 3em;
+  text-align: center;
+  margin-bottom: 0;
+  font-weight: 500;
+  text-transform: capitalize;
+  border-color: #d9d9d9;
+  width: 35%;
+}
+.sneak-peek a.btn.btn-default:hover {
+  border-color: #cccccc;
+}
+.sneak-peek .overlay {
+  background-color: #f46801;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  opacity: 0;
+  -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+.sneak-peek .overlay:hover {
+  opacity: 0.95;
+  background-color: #f46801;
+  -webkit-transition: all 0.2s ease-out;
+  -moz-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+}
+.sneak-peek .overlay .fa.fa-dribbble:before {
+  font-size: 1.5em;
+}
+.sneak-peek img {
+  width: 100%;
+  border: 10px solid #ffffff;
+  -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.15);
+  -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+.sneak-peek .overlay:hover p {
+  color: #ffffff;
+  text-align: center;
+  font-weight: 700;
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  -webkit-transition: all 0.2s ease-in;
+  -moz-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+}
+.sneak-peek .overlay:hover p:hover {
+  -webkit-transition: all 0.2s ease-out;
+  -moz-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
 }

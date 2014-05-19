@@ -3,7 +3,7 @@ footer {
   
   .fa.fa-heart {
     color: @orange;
-    .opacity(.5);
+    .opacity(.75);
   }
   
   p.text-center .btn.btn-orange {
@@ -48,7 +48,27 @@ p.details {
 }
 
 p.copyright {
-  color: @base-color-ccc; 
+  color: @base-color-aaa; 
+}
+
+.divider {
+  color: @base-color-ccc;
+  margin: 0 1em;
+}
+
+footer nav.text-center {
+  margin: 2em 0;
+  
+  a {
+    color: @base-color-ccc;
+    .transition(all .25s ease-in);
+    font-weight: normal;
+    
+    &:hover {
+      color: @orange;
+      .transition(all .25s ease-out);
+    }
+  }
 }
 
 a.fa.fa-twitter.twitter:hover { color: #55acee; }

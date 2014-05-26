@@ -29,6 +29,17 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+	"\/stylesheets\/img\/cm_signoff.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 15631,
+		"inputAbbreviatedPath": "\/stylesheets\/img\/cm_signoff.png",
+		"outputAbbreviatedPath": "\/stylesheets\/img\/cm_signoff.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/stylesheets\/img\/dan.jpeg": {
 		"fileType": 16384,
 		"ignore": 0,
@@ -36,6 +47,17 @@
 		"initialSize": 238136,
 		"inputAbbreviatedPath": "\/stylesheets\/img\/dan.jpeg",
 		"outputAbbreviatedPath": "\/stylesheets\/img\/dan.jpeg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/stylesheets\/img\/danmlogo3.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 35428,
+		"inputAbbreviatedPath": "\/stylesheets\/img\/danmlogo3.png",
+		"outputAbbreviatedPath": "\/stylesheets\/img\/danmlogo3.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -139,6 +161,17 @@
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
+	"\/stylesheets\/js\/waypoints.min.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/stylesheets\/js\/waypoints.min.js",
+		"outputAbbreviatedPath": "\/stylesheets\/js\/min\/waypoints.min-ck.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
 	"\/stylesheets\/less\/base.less": {
 		"allowInsecureImports": 0,
 		"createSourceMap": 0,
@@ -169,6 +202,26 @@
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/stylesheets\/less\/buttons.less",
 		"outputAbbreviatedPath": "\/stylesheets\/css\/buttons.css",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"relativeURLS": 0,
+		"shouldRunAutoprefixer": 0,
+		"shouldRunBless": 0,
+		"strictImports": 0,
+		"strictMath": 0,
+		"strictUnits": 0
+		},
+	"\/stylesheets\/less\/dropdowns.less": {
+		"allowInsecureImports": 0,
+		"createSourceMap": 0,
+		"disableJavascript": 0,
+		"fileType": 1,
+		"ieCompatibility": 1,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/stylesheets\/less\/dropdowns.less",
+		"outputAbbreviatedPath": "\/stylesheets\/css\/dropdowns.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,

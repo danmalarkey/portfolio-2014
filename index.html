@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=320, initial-scale=1, maximum-scale=1, user-scalable=1"/>
     <meta name="description" content="Dan Malarkey, Dan, Malarkey, HTML, HTML5, CSS, CSS3, Open Source, Open Source Framework, Front End Framework, Boilerplate"> 
-    <meta name="keywords" content="HTML, CSS, JS, JavaScript, framework, front-end, frontend, web development, schema, schema ui, schema ui framework, css framework, css frameworks">
+    <meta name="keywords" content="Dan Malarkey, UI Designer, Dan Malarkey UI Designer, UX designer, Dan Malarkey UX Designer, Jacksonville Florida UI Designer, Jacksonville Florida UX Designer, Dan Malarkey Jacksonville Florida UI Designer, Jacksonville Florida UX Designer, Jacksonville User Interface Designer, Jacksonville User Experience Designer, Florida User Interface Designer, Florida User Experience Designer, Jacksonville Front End Development, Schema UI Framework, Dan Malarkey feature[23], Dan feature[23], HTML, CSS, JS, JavaScript, framework, front-end, frontend, web development, schema, schema ui, schema ui framework, css framework, css frameworks">
     <meta name="author" content="Dan Malarkey | http://danmalarkey.com ©2014">
 
 		<!-- Stylesheet -->
@@ -38,7 +38,7 @@
           <a href="">Case Studies</a>
           <a href="experience.html">Experience</a>
         </nav>
-        <div class="container">
+        <div class="container animated fadeInDown">
           <div class="row">
             <div class="col6">
               <h1>User Interface Designer driven by user expectations.</h1>
@@ -74,16 +74,16 @@
               <i class="fa fa-code"></i>
               <h2>Front End Development with HTML5 & CSS3</h2>
               <p>I love front end development so much I developed <a href="#" target="_blank">Schema</a>, a powerfully light, 
-              responsive, and lean frontend UI framework built with LESS. <br /><a href="#">See why it helps you.</a>
+              responsive, and lean frontend UI framework built with LESS. <a href="#">See why it helps you.</a>
               </p>
             </div>
           </div>
       </div>
     </section>
     
-    <section class="sneak-peek">
+    <section id="count" class="count sneak-peek">
       <div class="container">
-        <h1 class="text-center">A few <a href="http://danmalarkey.com/dan_malarkey" target="_blank">dribbble</a> shots.</h1>
+        <h1 class="text-center"><a href="http://dribbble.com/dan_malarkey" target="_blank">Shots</a> of recent work.</h1>
         <div class="row-fluid">
           <article class="col4">
             <a href="https://dribbble.com/shots/1132465-Personal-Logo?list=users&offset=11" target="_blank">
@@ -136,6 +136,19 @@
         </nav>
       </div>
     </footer>
-    
+        <script src="stylesheets/js/waypoints.min.js"></script>
+    <script>
+      //$(window).bind("load", function() {
+        $('#count.count').waypoint(function() {
+         $(this).toggleClass('animate');
+        },{
+          offset:'90%',
+          triggerOnce:true
+        });
+        $('body').load (function() {
+          $(this).toggleClass('fadeInDown');
+        });
+      //});
+    </script>
   </body>
 </html>

@@ -8,7 +8,6 @@ All things Typography related.
 // ----------------------------
 
 h1, h2, h3, h4, h5, h6 { 
-	color: @base-color-555;
 	font-family: @headline-type;  
 	margin-bottom: 0.500rem; 
 	text-rendering: optimizelegibility; }
@@ -37,7 +36,8 @@ h1 {
 	
 h2 { 
 	.rem-px(font-size, 31);   
-	line-height: 1.2;  }
+	line-height: 1.2;  
+	color: @base-color-555; }
 		
 h3 { 
 	.rem-px(font-size, 24);  
@@ -47,14 +47,15 @@ h4 {
 	.rem-px(font-size, 18);  
 	line-height: 30px; 
 	margin-top: 0; 
-	color: @base-color-aaa; }
+	color: @base-color-555; }
 	
 h5 { 
 	.rem-px(font-size, 14); }
 	
 h6 { 
 	.rem-px(font-size, 12);  
-	line-height: 21px; }
+	line-height: 21px; 
+	letter-spacing: 1px; }
 	
 .subheader { 
 	color: darken(@asbestos,10%); 

@@ -2,7 +2,7 @@
  *  Schema UI Framework
  *
  *  The MIT License (MIT)
- *  Copyright @2013 Dan Malarkey
+ *  Copyright @2014 Dan Malarkey
  *
  *	Permission is hereby granted, free of charge, to any person obtaining a copy
  *	of this software and associated documentation files (the "Software"), to deal
@@ -29,7 +29,7 @@
 body {
   background: #ffffff;
   background-color: #ffffff;
-  font: 16px/23px "franklin-gothic-urw", sans-serif, "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "franklin-gothic-urw", sans-serif, "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 16px;
   font-size: 1rem;
   line-height: 1.9;
@@ -1004,7 +1004,6 @@ h3,
 h4,
 h5,
 h6 {
-  color: #555555;
   font-family: "franklin-gothic-urw-comp", sans-serif;
   margin-bottom: 0.500rem;
   text-rendering: optimizelegibility;
@@ -1045,6 +1044,7 @@ h2 {
   font-size: 31px;
   font-size: 1.9375rem;
   line-height: 1.2;
+  color: #555555;
 }
 h3 {
   font-size: 24px;
@@ -1056,7 +1056,7 @@ h4 {
   font-size: 1.125rem;
   line-height: 30px;
   margin-top: 0;
-  color: #aaaaaa;
+  color: #555555;
 }
 h5 {
   font-size: 14px;
@@ -1066,6 +1066,7 @@ h6 {
   font-size: 12px;
   font-size: 0.75rem;
   line-height: 21px;
+  letter-spacing: 1px;
 }
 .subheader {
   color: #667273;
@@ -1110,7 +1111,7 @@ Here you'll find small, medium, large, and full size buttons.
 ============================================================= */
 /* Small buttons  */
 .btn.btn-small {
-  padding: 10px;
+  padding: 7px 10px;
   font-size: 12px;
   font-size: 0.75rem;
 }
@@ -1139,11 +1140,11 @@ Here you'll find small, medium, large, and full size buttons.
   padding: 1em;
   display: inline-block;
   font-family: "franklin-gothic-urw", sans-serif;
-  -webkit-border-radius: 4px;
-  -moz-border-radius: 4px;
-  -ms-border-radius: 4px;
-  -o-border-radius: 4px;
-  border-radius: 4px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+  border-radius: 6px;
   font-size: 16px;
   font-size: 1rem;
   font-weight: normal;
@@ -1680,7 +1681,7 @@ a.logo:before {
   width: 35%;
 }
 .sneak-peek a.btn.btn-default:hover {
-  border-color: #a6a6a6;
+  border-color: #bfbfbf;
   background: #ffffff;
   background: -webkit-gradient(linear, left bottom, left top, color-stop(0, #f8f8f8), color-stop(1, #f8f8f8));
   background: -ms-linear-gradient(bottom, #f8f8f8, #f8f8f8);
@@ -1750,11 +1751,10 @@ a.logo:before {
   margin-top: 125px;
 }
 footer {
-  padding: 6em 0;
+  padding: 6em 0 0 0;
 }
 footer .fa.fa-heart {
   color: #f46801;
-  opacity: 0.75;
   width: 20px;
   width: 1.25rem;
 }
@@ -1799,7 +1799,10 @@ p.details {
   margin-top: 3em;
 }
 p.copyright {
-  color: #aaaaaa;
+  color: #cccccc;
+  background: #555555;
+  padding: 2em 0;
+  margin-bottom: 0;
 }
 .divider {
   color: #cccccc;
@@ -1820,24 +1823,6 @@ footer nav.text-center a:hover {
   -webkit-transition: all 0.25s ease-out;
   -moz-transition: all 0.25s ease-out;
   transition: all 0.25s ease-out;
-}
-a.fa.fa-twitter.twitter:hover {
-  color: #55acee;
-}
-a.fa.fa-github.github:hover {
-  color: #171515;
-}
-a.fa.fa-bitbucket.bitbucket:hover {
-  color: #205081;
-}
-a.fa.fa-instagram.instagram:hover {
-  color: #3f729b;
-}
-a.fa.fa-dribbble.dribbble:hover {
-  color: #ea4c89;
-}
-a.fa.fa-linkedin.linkedin:hover {
-  color: #0e76a8;
 }
 header nav a::after {
   content: "";
@@ -2012,6 +1997,281 @@ a.logo:before {
 .about-me h1 {
   margin-top: 0;
   padding-top: 0;
+}
+#count {
+  background-color: #eeeeee;
+}
+#animate-fade {
+  opacity: 0;
+}
+.count {
+  padding: 6em 0;
+  border-top: 1px solid #dfdfdf;
+  border-bottom: 1px solid #dfdfdf;
+  -webkit-transition: all 0.15s ease-in;
+  -moz-transition: all 0.15s ease-in;
+  transition: all 0.15s ease-in;
+  opacity: 0;
+  background-color: #eeeeee;
+  -webkit-box-shadow: inset 0 1px 2px #ffffff;
+  -moz-box-shadow: inset 0 1px 2px #ffffff;
+  box-shadow: inset 0 1px 2px #ffffff;
+}
+.count h1.stat {
+  font-size: 48px;
+  font-size: 3rem;
+  margin-top: 0;
+  color: #555555;
+  -webkit-transition: all 0.15s ease-in;
+  -moz-transition: all 0.15s ease-in;
+  transition: all 0.15s ease-in;
+}
+.count h1.text-center {
+  margin: 0 0 2em 0;
+}
+.count .col3 {
+  border-top: 10px solid #f46801;
+  background-color: #ffffff;
+  -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+  -webkit-transition: all 0.15s ease-in;
+  -moz-transition: all 0.15s ease-in;
+  transition: all 0.15s ease-in;
+  padding: 1em;
+}
+.count p {
+  color: #999999;
+  margin-bottom: 0;
+  font-size: 16px;
+  font-size: 1rem;
+  -webkit-transition: all 0.15s ease-in;
+  -moz-transition: all 0.15s ease-in;
+  transition: all 0.15s ease-in;
+}
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+ul li {
+  display: block;
+}
+.featured {
+  padding-bottom: 3em;
+}
+.featured h3 {
+  color: #777777;
+}
+.featured a {
+  color: #aaaaaa;
+  font-weight: normal;
+}
+.featured a:hover {
+  color: #f46801;
+}
+.featured ul li {
+  color: #aaaaaa;
+}
+.animate {
+  display: block;
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  transition: all 1s ease;
+  opacity: 1;
+}
+.animate-fade {
+  display: block;
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  transition: all 1s ease;
+  opacity: 1;
+}
+header.casestudies-hero {
+  background: url("http://666a658c624a3c03a6b2-25cda059d975d2f318c03e90bcf17c40.r92.cf1.rackcdn.com/unsplash_528c8f581f45e_1.JPG") no-repeat 0% 50%;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  padding-top: 30px;
+  padding-top: 1.875rem;
+  position: relative;
+  height: 300px;
+  height: 18.75rem;
+}
+header.casestudies-hero .hero-overlay {
+  background: #555555;
+  opacity: 0.92;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  overflow: hidden;
+  z-index: 1;
+}
+header.casestudies-hero a .brand {
+  width: 55px;
+  width: 3.4375rem;
+  z-index: 3;
+  position: relative;
+  text-decoration: none;
+  border: none;
+}
+header.casestudies-hero nav {
+  float: right;
+  list-style: none;
+  width: 50%;
+  position: relative;
+  z-index: 3;
+}
+header.casestudies-hero nav a {
+  float: right;
+  display: inline-table;
+  color: #ffffff;
+  margin-left: 48px;
+  margin-left: 3rem;
+  text-decoration: none;
+  vertical-align: middle;
+}
+header.casestudies-hero h1 {
+  font-family: "franklin-gothic-urw-comp", sans-serif;
+  font-size: 48px;
+  font-size: 3rem;
+  color: #eeeeee;
+  position: relative;
+  z-index: 3;
+  text-transform: uppercase;
+  padding-top: 90px;
+  padding-top: 5.625rem;
+}
+header.casestudies-hero p {
+  color: #ffffff;
+  z-index: 3;
+  position: relative;
+  font-size: 18px;
+  font-size: 1.125rem;
+  margin-top: 24px;
+  margin-top: 1.5rem;
+  padding-right: 6%;
+}
+header.casestudies-hero .hero-img-phone {
+  position: relative;
+  z-index: 3;
+  width: 375px;
+  width: 23.4375rem;
+  top: 50px;
+  top: 3.125rem;
+}
+a.logo:after,
+a.logo:before {
+  border: none;
+  height: 0px;
+}
+.case-studies {
+  text-align: center;
+  padding-top: 60px;
+  padding-top: 3.75rem;
+  padding-bottom: 60px;
+  padding-bottom: 3.75rem;
+}
+.case-studies h1 {
+  margin-top: 0;
+}
+.case-studies .container.item {
+  width: 70%;
+  margin-top: 6em;
+  overflow: hidden;
+  height: 270px;
+  border-bottom: 1px solid #eeeeee;
+}
+.case-studies .container.item .img-ex-mobile {
+  width: 50%;
+  float: right;
+  margin-right: 5%;
+  margin-top: 20px;
+}
+.case-studies .container.item .img-ex-desktop {
+  width: 100%;
+  float: right;
+  margin-right: -13%;
+  margin-top: 20px;
+}
+.case-studies .row-fluid {
+  text-align: left;
+}
+.case-studies .row-fluid .left-content {
+  width: 40%;
+}
+.case-studies .row-fluid .left-content .hr_thin {
+  width: 10%;
+  display: inline-block;
+}
+.case-studies .row-fluid .left-content .btn {
+  margin-top: 40px;
+  margin-left: -190px;
+  background: #2ecc71;
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(0, #27af61), color-stop(1, #2ecc71));
+  background: -ms-linear-gradient(bottom, #27af61, #2ecc71);
+  background: -moz-linear-gradient(center bottom, #27af61 0%, #2ecc71 100%);
+  background: -o-linear-gradient(#2ecc71, #27af61);
+  background-image: linear-gradient(top, #27af61, #2ecc71);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#2ecc71', endColorstr='#27af61', GradientType=0);
+  -webkit-transition: margin 0.45s ease-in-out;
+  -moz-transition: margin 0.45s ease-in-out;
+  transition: margin 0.45s ease-in-out;
+}
+.case-studies .row-fluid .left-content .btn:hover {
+  background-color: #2ecc71;
+  background: #2ecc71;
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(0, #2ecc71), color-stop(1, #2ecc71));
+  background: -ms-linear-gradient(bottom, #2ecc71, #2ecc71);
+  background: -moz-linear-gradient(center bottom, #2ecc71 0%, #2ecc71 100%);
+  background: -o-linear-gradient(#2ecc71, #2ecc71);
+  background-image: linear-gradient(top, #2ecc71, #2ecc71);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#2ecc71', endColorstr='#2ecc71', GradientType=0);
+}
+.case-studies .row-fluid .right-content {
+  width: 60%;
+}
+.case-studies h6.tags {
+  color: #aaaaaa;
+  margin-top: 10px;
+  margin-top: 0.625rem;
+}
+.case-studies .col4 h2 {
+  text-align: left;
+  margin-top: -7px;
+  padding-right: 16px;
+  padding-right: 1rem;
+}
+.case-studies p {
+  text-align: left;
+  margin-top: 32px;
+  margin-top: 2rem;
+}
+.case-studies h1 {
+  margin-top: 0;
+  padding-top: 0;
+}
+.case-studies .container.item .img-ex-mobile,
+.case-studies .container.item .img-ex-desktop {
+  -webkit-transition: margin 0.45s ease-in-out;
+  -moz-transition: margin 0.45s ease-in-out;
+  transition: margin 0.45s ease-in-out;
+}
+.case-studies .container.item:hover .btn {
+  margin-left: 0px;
+}
+.case-studies .container.item:hover .img-ex-mobile,
+.case-studies .container.item:hover .img-ex-desktop {
+  margin-top: 0px;
+  position: relative;
 }
 #count {
   background-color: #eeeeee;

@@ -169,14 +169,11 @@ header a:hover::after {
 .neg-1px {
   letter-spacing: -1px;
 }
-/*
-.font-size (@size) {
-  font-size: 0px + @size;
-  font-size: 0rem + @size / @base-font-size;
-}
-*/
 .active {
   font-weight: 900;
+}
+.full-width {
+  width: 100%;
 }
 /* 24px */
 /* 20px */
@@ -1039,6 +1036,7 @@ h1 {
   font-size: 2.25rem;
   line-height: 1.2;
   margin-bottom: 0;
+  color: #555555;
 }
 h2 {
   font-size: 31px;
@@ -1050,6 +1048,7 @@ h3 {
   font-size: 24px;
   font-size: 1.5rem;
   line-height: 34px;
+  color: #555555;
 }
 h4 {
   font-size: 18px;
@@ -1061,6 +1060,9 @@ h4 {
 h5 {
   font-size: 14px;
   font-size: 0.875rem;
+  color: #999999;
+  margin-bottom: 0;
+  margin-top: 0;
 }
 h6 {
   font-size: 12px;
@@ -1087,8 +1089,8 @@ p {
   margin: 0 0 1em;
   color: #777777;
   font-family: "franklin-gothic-urw", sans-serif;
-  font-size: 18px;
-  font-size: 1.125rem;
+  font-size: 16px;
+  font-size: 1rem;
   line-height: 1.6;
 }
 p.lead {
@@ -1137,7 +1139,7 @@ Here you'll find small, medium, large, and full size buttons.
 .btn {
   border: 1px solid transparent;
   color: #bfbfbf;
-  padding: 1em;
+  padding: .5em 1em;
   display: inline-block;
   font-family: "franklin-gothic-urw", sans-serif;
   -webkit-border-radius: 6px;
@@ -1800,7 +1802,7 @@ p.details {
 }
 p.copyright {
   color: #cccccc;
-  background: #555555;
+  background: #ffffff;
   padding: 2em 0;
   margin-bottom: 0;
 }
@@ -1998,24 +2000,19 @@ a.logo:before {
   margin-top: 0;
   padding-top: 0;
 }
+/*
 #count {
-  background-color: #eeeeee;
+  background-color: @base-color-eee;
 }
+*/
 #animate-fade {
   opacity: 0;
 }
 .count {
-  padding: 6em 0;
-  border-top: 1px solid #dfdfdf;
-  border-bottom: 1px solid #dfdfdf;
   -webkit-transition: all 0.15s ease-in;
   -moz-transition: all 0.15s ease-in;
   transition: all 0.15s ease-in;
   opacity: 0;
-  background-color: #eeeeee;
-  -webkit-box-shadow: inset 0 1px 2px #ffffff;
-  -moz-box-shadow: inset 0 1px 2px #ffffff;
-  box-shadow: inset 0 1px 2px #ffffff;
 }
 .count h1.stat {
   font-size: 48px;
@@ -2273,24 +2270,24 @@ a.logo:before {
   margin-top: 0px;
   position: relative;
 }
-#count {
-  background-color: #eeeeee;
-}
 #animate-fade {
   opacity: 0;
 }
-.count {
+.count.sneak-peek,
+.count.stat {
   padding: 6em 0;
   border-top: 1px solid #dfdfdf;
   border-bottom: 1px solid #dfdfdf;
-  -webkit-transition: all 0.15s ease-in;
-  -moz-transition: all 0.15s ease-in;
-  transition: all 0.15s ease-in;
-  opacity: 0;
   background-color: #eeeeee;
   -webkit-box-shadow: inset 0 1px 2px #ffffff;
   -moz-box-shadow: inset 0 1px 2px #ffffff;
   box-shadow: inset 0 1px 2px #ffffff;
+}
+.count {
+  -webkit-transition: all 0.15s ease-in;
+  -moz-transition: all 0.15s ease-in;
+  transition: all 0.15s ease-in;
+  opacity: 0;
 }
 .count h1.stat {
   font-size: 48px;
@@ -2365,4 +2362,122 @@ ul li {
   -ms-transition: all 1s ease;
   transition: all 1s ease;
   opacity: 1;
+}
+header.hxp-hero {
+  background: url("../img/hxp_hero_bck.jpg") no-repeat 0% 100%;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  padding-top: 30px;
+  padding-top: 1.875rem;
+  position: relative;
+  height: 400px;
+  height: 25rem;
+  overflow: hidden;
+}
+header.hxp-hero .hero-overlay {
+  background: #25bfea;
+  opacity: 0.62;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  overflow: hidden;
+  z-index: 1;
+}
+.work-sample-wrapper {
+  margin-top: -100px;
+  margin-top: -6.25rem;
+  margin-bottom: 48px;
+  margin-bottom: 3rem;
+  position: relative;
+  z-index: 9;
+}
+.work-sample-wrapper .container {
+  padding: 16px;
+  padding: 1rem;
+  background-color: rgba(85, 85, 85, 0.95);
+}
+.work-sample-wrapper .col4 {
+  border-top: 1px solid #eeeeee;
+}
+.work-sample-wrapper h3 {
+  margin-top: 0;
+  color: #ffffff;
+}
+.work-sample-wrapper .btn {
+  margin-top: 1.67em;
+}
+hr.hr_medium {
+  width: 10%;
+  float: left;
+  margin-bottom: 2em;
+}
+.col6.product-shot {
+  position: relative;
+  z-index: 6;
+  float: left;
+  text-align: left;
+  margin-left: 16%;
+}
+.col6.product-shot img {
+  width: 80%;
+  top: -95px;
+  position: relative;
+}
+.hxp-logo {
+  background-color: #25bfea;
+  height: 400px;
+  vertical-align: middle;
+  display: flex;
+  display: -webkit-flex;
+  text-align: center;
+}
+.hxp-logo img {
+  width: 300px;
+  margin: auto;
+}
+.hxp img.mockup {
+  width: 100%;
+  position: relative;
+  top: 10px;
+  top: 0.625rem;
+}
+.hxp .container.mockup {
+  border-bottom: 1px solid #cccccc;
+}
+.palette {
+  padding: 3em 0;
+}
+.palette .circle {
+  width: 14.895%;
+  padding: 7.45%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+  display: inline-block;
+  margin-top: 3em;
+}
+.circle.light-grey {
+  background-color: #aabfd0;
+}
+.circle.medium-grey {
+  background-color: #8092a2;
+}
+.circle.dark-grey {
+  background-color: #556270;
+}
+.circle.hxp-black {
+  background-color: #333333;
+}
+.circle.hxp-blue {
+  background-color: #25bfea;
+}
+.circle.hxp-darkblue {
+  background-color: #0498ba;
 }

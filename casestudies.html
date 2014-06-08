@@ -45,18 +45,18 @@
         <h1>The Goods.</h1>
       </div>
       <div class="row-fluid">
-        <div class="container item">
+        <div class="container item animated fadeInDown">
           <div class="left-content left-float">
             <h2>HydroXphere</h2>
             <hr class="hr_thin">
             <h6 class="tags">Branding • iOS Design • Web Development</h6>
-            <a href="" class="btn btn-success btn-small">Learn More About This Project &rarr;</a>
+            <a href="hydroxphere.html" class="btn btn-success btn-small">Learn More About This Project &rarr;</a>
           </div>
           <div class="right-content right-float">
             <img class="img-ex-mobile" src="stylesheets/img/starter_ss.png" alt="starter_ss">
           </div>
         </div>
-        <div class="container item">
+        <div id="count" class="container item count animated">
           <div class="left-content left-float">
             <h2>K9s For Warriors</h2>
             <hr class="hr_thin">
@@ -67,7 +67,7 @@
             <img class="img-ex-desktop" src="stylesheets/img/k9_mockup.png" alt="starter_ss">
           </div>
         </div>
-        <div class="container item">
+        <div id="count" class="container item count">
           <div class="left-content left-float">
             <h2>HydroXphere</h2>
             <hr class="hr_thin">
@@ -78,7 +78,7 @@
             <img class="img-ex-mobile" src="stylesheets/img/starter_ss.png" alt="starter_ss">
           </div>
         </div>
-        <div class="container item">
+        <div id="count" class="container item count">
           <div class="left-content left-float">
             <h2>HydroXphere</h2>
             <hr class="hr_thin">
@@ -170,7 +170,7 @@
         $('#count.count').waypoint(function() {
          $(this).toggleClass('animate');
         },{
-          offset:'70%',
+          offset:'80%',
           triggerOnce:true
         });
         $('body').load (function() {

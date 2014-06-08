@@ -1,0 +1,125 @@
+header.hxp-hero {
+  background: url("../img/hxp_hero_bck.jpg") no-repeat 0% 100%;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  .rem-px(padding-top, 30);
+  position: relative;
+  .rem-px(height, 400);
+  overflow: hidden;
+  
+  .hero-overlay {
+    background: @hxp-blue;
+    .opacity(.62);
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    overflow: hidden;
+    z-index: 1;
+  }
+}
+
+.work-sample-wrapper {
+  .rem-px(margin-top, -100);
+  .rem-px(margin-bottom, 48);
+  position: relative;
+  z-index: 9;
+  
+  .container {
+    .rem-px(padding, 16);
+    background-color: rgba(85,85,85,.95);
+  }
+  
+  .col4 {
+    border-top: 1px solid @base-color-eee;
+  }
+  
+  h3 {
+    margin-top: 0;
+    color: @white;
+  }
+  
+  .btn {
+    margin-top: 1.67em;
+  }
+  
+}
+
+hr.hr_medium { 
+  width: 10%; 
+  float: left;
+  margin-bottom: 2em;
+}
+
+.col6.product-shot {
+  position: relative;
+  z-index: 6;
+  float: left;
+  text-align: left;
+  margin-left: 16%;
+  
+  img {
+    width: 80%;
+    top: -95px;
+    position: relative;
+  }
+}
+
+.hxp-logo {
+  background-color: @hxp-blue;
+  height: 400px;
+  vertical-align: middle;
+  display: flex;
+  display: -webkit-flex;
+  text-align: center;
+  
+  img {
+    width: 300px;
+    margin: auto;
+  }
+}
+
+.hxp {
+  img.mockup {
+    width: 100%;
+    position: relative;
+    .rem-px(top, 10);
+  }
+  
+  .container.mockup {
+    border-bottom: 1px solid @base-color-ccc;
+  }
+}
+
+.palette {
+  padding: 3em 0;
+  .circle {
+    width: 14.895%;
+    padding: 7.45%;
+    .border-radius(50%);
+    display: inline-block;
+    margin-top: 3em;
+  }
+}
+
+.circle.light-grey { background-color: @light-grey; }
+.circle.medium-grey { background-color: @med-grey; }
+.circle.dark-grey { background-color: @dark-grey; }
+.circle.hxp-black { background-color: @hxp-black; }
+.circle.hxp-blue { background-color: @hxp-blue; }
+.circle.hxp-darkblue { background-color: @hxp-darkblue; }
+
+@light-grey: 		#aabfd0;
+@med-grey: 			#8092a2;
+@dark-grey: 		#556270;
+
+@hxp-black: 		#333;
+@hxp-blue: 			#25bfea;
+@hxp-darkblue: 		#0498ba;
+
+@dq: 				#ffd7d7;
+@green: 			#bada55;
